@@ -1,0 +1,26 @@
+{
+  "name": "abq-zombie-response",
+  "version": "1.0.0",
+  "description": "zombie-response location guide for key points in the ABQ area based on the needs of the citizens in the even of a global colapse or a Zombie Apocalypse. Locations for hospitals food stuff, and key government facilities so citizens can weather the event with the least possible chance of infection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRockenmacher/ABQ-Zombie-Response.git"
+  },
+  "author": "JR Rocken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JRockenmacher/ABQ-Zombie-Response/issues"
+  },
+  "homepage": "https://github.com/JRockenmacher/ABQ-Zombie-Response#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4"
+  }
+}
