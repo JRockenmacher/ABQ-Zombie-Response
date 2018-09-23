@@ -7,6 +7,7 @@ const morgan      = require('morgan')
 const cors        = require('cors')
 const app         = module.exports = express()
 const port        = parseInt(process.env.PORT || 3000)
+const placeRoutes = require('./routes/places_routes')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -20,6 +21,7 @@ app.use(cors({origin: true, credentials: true}))
 
 
 // These 2 `app.use` MUST be last `.use`'s
+app.use('/places', placeRoutes)
 app.use(notFound)
 app.use(errorHandler)
 
